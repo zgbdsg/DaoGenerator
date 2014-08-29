@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="libs/DaoCore-1.3.8-SNAPSHOT-javadoc.jar"/>
+	<classpathentry kind="lib" path="libs/DaoCore-1.3.8-SNAPSHOT-sources.jar"/>
+	<classpathentry kind="lib" path="libs/DaoCore-1.3.8-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="libs/freemarker.jar"/>
+	<classpathentry kind="lib" path="libs/greendao-generator-1.3.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

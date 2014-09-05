@@ -42,6 +42,7 @@ public class ExampleDaoGenerator {
         addNote(schema);
         addTodoList(schema);
         addUser(schema);
+        addContacts(schema);
         addWishList(schema);
         addNotification(schema);
         addShoppingList(schema);
@@ -57,6 +58,7 @@ public class ExampleDaoGenerator {
         shoppingList.addIntProperty("tag");
         shoppingList.addIntProperty("grpId");
         shoppingList.addIntProperty("usrId");
+        shoppingList.addIntProperty("buyFlag");
         shoppingList.addStringProperty("usrName");
         shoppingList.addStringProperty("content");
 
@@ -214,6 +216,18 @@ public class ExampleDaoGenerator {
         user.addIntProperty("flag");
         user.addIntProperty("role");
         user.addStringProperty("avatar");
+    }
+    
+    private static void addContacts(Schema schema) {
+        Entity contact = schema.addEntity("Contact");
+        contact.addIdProperty();
+        contact.addIntProperty("serverId");
+        contact.addStringProperty("name");
+        contact.addStringProperty("title");
+        contact.addStringProperty("email");
+        contact.addStringProperty("cellno");
+        contact.addStringProperty("telno");
+        contact.addStringProperty("avatar");
     }
     
     private static void addGroup(Schema schema) {

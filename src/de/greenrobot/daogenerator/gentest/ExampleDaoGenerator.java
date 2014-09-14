@@ -121,6 +121,7 @@ public class ExampleDaoGenerator {
         toDoList.addStringProperty("title");
         toDoList.addStringProperty("content");
         toDoList.addDateProperty("creatTime");
+        toDoList.addDateProperty("happenDate");
 
         toDoList.addDateProperty("startDate");
         toDoList.addDateProperty("endDate");

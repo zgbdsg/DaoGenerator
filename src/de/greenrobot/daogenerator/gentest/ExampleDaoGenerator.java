@@ -223,6 +223,7 @@ public class ExampleDaoGenerator {
         Entity contact = schema.addEntity("Contact");
         contact.addIdProperty();
         contact.addIntProperty("serverId");
+        contact.addIntProperty("grpId");
         contact.addStringProperty("name");
         contact.addStringProperty("title");
         contact.addStringProperty("email");

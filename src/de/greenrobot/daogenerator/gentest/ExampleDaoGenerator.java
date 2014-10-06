@@ -183,6 +183,7 @@ public class ExampleDaoGenerator {
         note.addIntProperty("serverId");
         note.addIntProperty("usrId");
         note.addIntProperty("grpId");
+        note.addIntProperty("flag");
         note.addStringProperty("content").notNull();
         note.addStringProperty("img1");
         note.addStringProperty("img2");
@@ -206,8 +207,8 @@ public class ExampleDaoGenerator {
     private static void addUser(Schema schema) {
         Entity user = schema.addEntity("User");
         user.addIdProperty();
-        user.addIntProperty("serverId");
-        user.addIntProperty("loginId");
+        user.addLongProperty("serverId");
+        user.addStringProperty("loginId");
         user.addStringProperty("name");
         user.addIntProperty("grpId");
         user.addStringProperty("email");
@@ -233,13 +234,13 @@ public class ExampleDaoGenerator {
     }
     
     private static void addGroup(Schema schema) {
-        Entity group = schema.addEntity("Group");
+        Entity group = schema.addEntity("FamGroup");
         group.addIdProperty();
         group.addIntProperty("serverId");
-        group.addIntProperty("cityId");
-        group.addStringProperty("famName");
         group.addIntProperty("famId");
         group.addIntProperty("orderday");
+        group.addIntProperty("cityId");
+        group.addStringProperty("famName");
         group.addStringProperty("avatar");
         group.addDateProperty("creatTime");
     }

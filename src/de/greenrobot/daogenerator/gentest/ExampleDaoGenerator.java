@@ -46,6 +46,7 @@ public class ExampleDaoGenerator {
         addWishList(schema);
         addNotification(schema);
         addShoppingList(schema);
+        addRequest(schema);
 
         new DaoGenerator().generateAll(schema, "src_gen");
     }
@@ -245,4 +246,13 @@ public class ExampleDaoGenerator {
         group.addDateProperty("creatTime");
     }
 
+    private static void addRequest(Schema schema){
+    	Entity request = schema.addEntity("FamRequest");
+        request.addIdProperty();
+        request.addIntProperty("type");
+        request.addStringProperty("objId");
+        request.addStringProperty("method");
+        request.addStringProperty("params");
+        request.addStringProperty("filepath");
+    }
 }

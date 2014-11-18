@@ -134,13 +134,12 @@ public class ExampleDaoGenerator {
         WishList.addIntProperty("serverId");
         WishList.addIntProperty("grpId");
         WishList.addIntProperty("usrId");
-        WishList.addStringProperty("name");
-        WishList.addStringProperty("description");
+        WishList.addStringProperty("title");
+        WishList.addStringProperty("content");
         WishList.addStringProperty("detailCount");
         WishList.addDateProperty("creatTime");
 
-        WishList.addDateProperty("startDate");
-        WishList.addDateProperty("endDate");
+        WishList.addDateProperty("beforeDate");
     }
     
 //    private static void addAlbum(Schema schema) {
